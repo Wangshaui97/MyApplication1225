@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:id="@+id/qiehuan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/common_nav_btn_menu_n"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="8dp"
+        />
+    <ImageView
+        android:id="@+id/sousuo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/common_nav_btn_search_n"
+        android:padding="15dp"
+        app:layout_constraintRight_toLeftOf="@id/qiehuan"
+        />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/common_nav_btn_back_n"
+        android:padding="15dp"
+        />
+    <EditText
+        android:id="@+id/putin"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintRight_toLeftOf="@id/sousuo"
+        app:layout_constraintLeft_toRightOf="@id/back"
+        android:hint="手机"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/putin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

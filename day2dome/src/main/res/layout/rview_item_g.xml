@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/gcon"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/gitem_img"
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        app:roundedCornerRadius="20dp"
+        app:roundBottomRight="true"
+        app:roundBottomLeft="true"
+        app:roundTopRight="true"
+        app:roundTopLeft="true"
+        />
+    <TextView
+        android:id="@+id/gitem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111"
+        app:layout_constraintTop_toBottomOf="@id/gitem_img"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        />
+
+</android.support.constraint.ConstraintLayout>
