@@ -74,7 +74,7 @@ public class RecycviewAdpter extends RecyclerView.Adapter<RecycviewAdpter.ViewHo
             @Override
             public void onClick(View v) {
                 context.startActivity(new Intent(context,DatailActivity.class));
-                EventBus.getDefault().post(new MsgEnent(i));
+                EventBus.getDefault().postSticky(new MsgEnent(i));
             }
         });
 
